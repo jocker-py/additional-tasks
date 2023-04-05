@@ -6,7 +6,7 @@ export type BanknotsType = 'Dollars' | 'RUBLS' | 'All';
 export type MoneyType = {
     banknotes: BanknotsType
     value: number
-    number: 'string'
+    number: string
 }
 
 let defaultMoney: Array<MoneyType> = [
