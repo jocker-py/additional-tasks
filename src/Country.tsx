@@ -10,10 +10,7 @@ type CountryPropsType = {
 export const Country = ({data, setFilterValue}: CountryPropsType) => {
     const setAll = () => setFilterValue('All');
     const setDollars = () => setFilterValue('Dollars');
-
-    const setRUBLS = () => {
-        // засетаем 'RUBLS'
-    }
+    const setRUBLS = () => setFilterValue('RUBLS');
 
     return (
         <div>
