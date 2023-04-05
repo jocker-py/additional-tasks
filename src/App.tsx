@@ -9,7 +9,7 @@ export type MoneyType = {
     number: 'string'
 }
 
-let defaultMoney: any = [  // типизируем
+let defaultMoney: Array<MoneyType> = [
     {banknotes: 'Dollars', value: 100, number: ' a1234567890'},
     {banknotes: 'Dollars', value: 50, number: ' z1234567890'},
     {banknotes: 'RUBLS', value: 100, number: ' w1234567890'},
