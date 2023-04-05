@@ -25,7 +25,7 @@ export const moneyFilter = (money: Array<MoneyType>, filter: BanknotsType): Arra
 };
 
 function App() {
-  const [money, setMoney] = useState<Array<MoneyType>>([]);
+  const [money, setMoney] = useState<Array<MoneyType>>(defaultMoney);
   const [filterValue, setFilterValue] = useState<BanknotsType>("");
 
   // а вот сейчас притормаживаем. И вдумчиво: константа filteredMoney получает результат функции moneyFilter
