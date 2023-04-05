@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import './App.css';
 import {Country} from "./Country";
 
-export type BanknotsType = '' // создадим типы для banknotes -он может быть 'Dollars', 'RUBLS' или 'All'
+export type BanknotsType = 'Dollars' | 'RUBLS' | 'All';
 export type MoneyType = {
     banknotes: BanknotsType
-    value: any// не ленимся, убираем заглушку, и пишем правильный тип)
-    number: any// ложку за Димыча, за...
+    value: number
+    number: 'string'
 }
 
 let defaultMoney: any = [  // типизируем
