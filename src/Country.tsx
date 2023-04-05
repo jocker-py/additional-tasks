@@ -7,7 +7,7 @@ type CountryPropsType = {
     setFilterValue: (filter: BanknotsType) => void
   }
 
-export const Country = (props: CountryPropsType) => {
+export const Country = ({data, setFilterValue}: CountryPropsType) => {
     const setAll = () => {
         // засетаем 'All'
     }
