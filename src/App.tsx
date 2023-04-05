@@ -21,8 +21,7 @@ let defaultMoney: Array<MoneyType> = [
 ]
 
 export const moneyFilter = (money: Array<MoneyType>, filter: BanknotsType): Array<MoneyType> => {
-    //если пришел filter со значением 'All', то возвращаем все банкноты
-    //return money.filter... ну да, придется фильтровать
+    return [...money].filter(item => filter === 'All' ? true : filter === item.banknotes);
 }
 
 function App() {
