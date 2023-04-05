@@ -31,15 +31,12 @@ function App() {
   return (
     <div className="App">
       <Country
-        data={filteredMoney}   //отрисовать будем деньги после фильтрации
-        setFilterValue={setFilterValue}  //useState передаем? Так можно было?!
-
+        data={filteredMoney}
+        setFilterValue={setFilterValue}
       />
     </div>
   );
 }
-
-// Итого: в этой компоненте у нас мозги. А вот отрисовка где-то глубже. Погружаемся в Country
 
 
 export default App;
