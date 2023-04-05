@@ -14,18 +14,9 @@ export const Country = ({data, setFilterValue}: CountryPropsType) => {
 
   return (
     <div>
-      <button onClick={() => {
-        "засетаем All";
-      }}>All
-      </button>
-      <button onClick={() => {
-        "засетаем Dollars";
-      }}>Dollars
-      </button>
-      <button onClick={() => {
-        "засетаем RUBLS";
-      }}>RUBLS
-      </button>
+      <button onClick={setAll}>All</button>
+      <button onClick={setDollars}>Dollars</button>
+      <button onClick={setRUBLS}>RUBLS</button>
       <City data={"передаем денюжки в город"}/>
     </div>
   );
