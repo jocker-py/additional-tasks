@@ -3,7 +3,7 @@ import {CurrentBankomat} from "./CurrentBankomat";
 import {MoneyType} from "./App";
 
 type CityPropsType = {
-    data: any //встречаем денюжки
+    data: Array<MoneyType> //встречаем денюжки
 }
 
 export const City = (props: CityPropsType) => {
