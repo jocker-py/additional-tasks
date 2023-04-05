@@ -1,14 +1,13 @@
-import React from 'react';
+import React, {FC} from "react";
 import {MoneyType} from "./App";
 
 type CurrentBankomatPropsType = {
     money: MoneyType
 }
-export const CurrentBankomat = (props:CurrentBankomatPropsType) => {
-
+export const CurrentBankomat: FC<CurrentBankomatPropsType> = ({money}) => {
     return (
         <div>
-            {props.money.banknotes}
+            {money.banknotes}
         </div>
     );
 };
